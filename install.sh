@@ -87,25 +87,7 @@ echo -e "                                                       "
     clear
 }
 
-check_token() {
-  echo -e "                                                       "
-  echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]               LICENSY FOXSTORE OFFC             [+]${NC}"
-  echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "                                                       "
-  TOKEN=$(jq -r '.token' token.json)
 
-  echo -e "${YELLOW}MASUKAN AKSES TOKEN :${NC}"
-  read -r USER_TOKEN
-
-  if [ "$USER_TOKEN" = "foxstore" ]; then
-    echo -e "${GREEN}AKSES BERHASIL${NC}}"
-  else
-    echo -e "${GREEN}AKSES GAGAL${NC}"
-    exit 1
-  fi
-  clear
-}
 
 # Install theme
 install_theme() {
