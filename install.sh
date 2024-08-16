@@ -116,23 +116,23 @@ install_theme() {
     read -r SELECT_THEME
     case "$SELECT_THEME" in
       1)
-        THEME_URL="https://github.com/MyMasWayVPN/AutoInstall-Theme-Pterodactyl/raw/main/theme/stellar.zip"
+        THEME_URL=$(echo -e"https://github.com/MyMasWayVPN/AutoInstall-Theme-Pterodactyl/raw/main/theme/stellar.zip")
         break
         ;;
       2)
-        THEME_URL="https://github.com/MyMasWayVPN/AutoInstall-Theme-Pterodactyl/raw/main/theme/billing.zip"
+        THEME_URL=$(echo -e"https://github.com/MyMasWayVPN/AutoInstall-Theme-Pterodactyl/raw/main/theme/billing.zip")
         break
         ;;
       3)
-        THEME_URL="https://github.com/MyMasWayVPN/AutoInstall-Theme-Pterodactyl/raw/main/theme/enigma.zip"
+        THEME_URL=$(echo -e"https://github.com/MyMasWayVPN/AutoInstall-Theme-Pterodactyl/raw/main/theme/enigma.zip")
         break
         ;; 
        4)
-        THEME_URL="https://github.com/MyMasWayVPN/AutoInstall-Theme-Pterodactyl/raw/main/theme/eclipse.zip"
+        THEME_URL=$(echo -e"https://github.com/MyMasWayVPN/AutoInstall-Theme-Pterodactyl/raw/main/theme/eclipse.zip")
         break
         ;;
       5)
-        THEME_URL="https://github.com/MyMasWayVPN/AutoInstall-Theme-Pterodactyl/raw/main/theme/nightcore.zip"
+        THEME_URL=$(echo -e"https://github.com/MyMasWayVPN/AutoInstall-Theme-Pterodactyl/raw/main/theme/nightcore.zip")
         break
         ;; 
       6)
